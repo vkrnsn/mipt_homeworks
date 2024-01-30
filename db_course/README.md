@@ -40,7 +40,7 @@ poetry run jupyter lab
 
 ### Загрузка данных
 
-[Ноутбук](notebooks/populate_db.ipynb) для очистки и загрузки данных
+[Ноутбук](notebooks/populate_db.ipynb) для подготовки и загрузки данных
 
 ![addresses](img/addresses.png)
 ![customers](img/customers.png)
