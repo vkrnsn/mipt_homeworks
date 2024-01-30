@@ -1,0 +1,48 @@
+Table transactions {
+  id serial [primary key]
+  date date
+  online_order bool
+  order_status varchar(10)
+  product_id int
+  customer_id int
+}
+
+Table products {
+  id serial [primary key]
+  legacy_product_id int
+  brand varchar(15)
+  line varchar(10)
+  class varchar(10)
+  size varchar(10)
+  list_price money
+  standard_cost money
+}
+
+Table customers {
+  id serial [primary key]
+  first_name varchar(20)
+  last_name varchar(20)
+  gender varchar(6)
+  dob date
+  job_title text
+  job_industry_category text
+  wealth_segment text
+  deceased_indicator char(1)
+  owns_car varchar(3)
+}
+
+Table adresses {
+  id serial [primary key]
+  address text
+  postcode smallint
+  state varchar(20)
+  country varchar(20)
+  property_valuation smallint
+  customer_id int
+}
+
+Ref: transactions.product_id > products.id // many-to-one
+
+Ref: transactions.customer_id > customers.id
+
+Ref: adresses.customer_id > customers.id
