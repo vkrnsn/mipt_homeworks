@@ -15,7 +15,7 @@ poetry install
 poetry run jupyter lab
 ```
 
-## Домашнее задание 1
+## ДЗ 1
 
 ### Структура
 
@@ -45,3 +45,13 @@ poetry run jupyter lab
 ![customers](img/customers.png)
 ![products](img/products.png)
 ![transactions](img/transactions.png)
+
+## ДЗ 2
+
+Запросы можно найти в ноутбуке [hw2](notebooks/hw2.ipynb)
+
+Предварительно необходимо создать БД 'hw2':
+
+```sql
+CREATE DATABASE hw2
+```
